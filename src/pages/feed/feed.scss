@@ -1,0 +1,14 @@
+page-feed{
+    
+    .feed_title{
+        color: red;
+    }
+    .center{
+        @extend %center;
+    }
+    .feed_date{
+        @extend %center;
+        color: green;
+    }
+}
+

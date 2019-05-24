@@ -1,0 +1,27 @@
+page-intro {
+    %font_slide{
+        font-family: Arial;
+        font-size: 14px;
+    }
+    .slide__desc{
+        @extend %font_slide;
+        padding: 10px;
+    }
+    @mixin skin($color) {
+        // @extend %center;
+        background: $color;
+    }
+    .slide__img{
+        height: 200px;
+        width: auto;
+    }
+    .slide--red{
+        @include skin(red);
+    }
+    .slide--green{
+        @include skin(green);
+    }
+    .slide--blue{
+        @include skin(blue);
+    }
+}
